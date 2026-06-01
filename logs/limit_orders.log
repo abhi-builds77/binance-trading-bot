@@ -1,0 +1,12 @@
+2026-06-01 17:31:40 | INFO     | trading_bot | Logging initialised → logs\limit_orders.log
+2026-06-01 17:31:40 | INFO     | trading_bot | Order request: symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=40000 stop_price=None
+2026-06-01 17:31:40 | INFO     | trading_bot.orders | Placing LIMIT BUY BTCUSDT qty=0.001 price=40000
+2026-06-01 17:31:40 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '40000', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1780315300976}
+2026-06-01 17:31:41 | ERROR    | trading_bot.client | HTTP 400 from Binance: {'code': -4164, 'msg': "Order's notional must be no smaller than 50 (unless you choose reduce only)."}
+2026-06-01 17:31:41 | ERROR    | trading_bot | Order placement failed: Binance API error [400]: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-06-01 17:32:42 | INFO     | trading_bot | Logging initialised → logs\limit_orders.log
+2026-06-01 17:32:42 | INFO     | trading_bot | Order request: symbol=BTCUSDT side=BUY type=LIMIT qty=0.002 price=40000 stop_price=None
+2026-06-01 17:32:42 | INFO     | trading_bot.orders | Placing LIMIT BUY BTCUSDT qty=0.002 price=40000
+2026-06-01 17:32:42 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.002', 'price': '40000', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1780315362537}
+2026-06-01 17:32:43 | DEBUG    | trading_bot.client | ← 200 {'orderId': 13693633240, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'J2MkgDp412o9MWTE4Q5qKJ', 'price': '40000.00', 'avgPrice': '0.00', 'origQty': '0.0020', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780315363087}
+2026-06-01 17:32:43 | INFO     | trading_bot.orders | Order placed successfully: orderId=13693633240 status=NEW
