@@ -118,47 +118,6 @@ Prompts you step-by-step with menus and re-prompts on invalid input.
 python cli.py --help
 ```
 
----
-
-## Example Output
-
-```
-╔══════════════════════════════════════════════════════╗
-║      Binance Futures Testnet  –  Trading Bot         ║
-╚══════════════════════════════════════════════════════╝
-
-────────────────────────────────────────────────────────
-  ORDER REQUEST
-────────────────────────────────────────────────────────
-  Symbol      : BTCUSDT
-  Side        : BUY
-  Type        : MARKET
-  Quantity    : 0.001
-────────────────────────────────────────────────────────
-
-  Submitting order to Binance Futures Testnet…
-
-────────────────────────────────────────────────────────
-  ORDER RESPONSE
-────────────────────────────────────────────────────────
-  Order ID      : 3512890123
-  Symbol        : BTCUSDT
-  Status        : FILLED
-  Side          : BUY
-  Type          : MARKET
-  Orig Qty      : 0.001
-  Executed Qty  : 0.001
-  Avg Price     : 42318.50000
-  Price         : 0
-  Time In Force : GTC
-  Client Order  : web_Xu8kPq9mNr2
-────────────────────────────────────────────────────────
-
-  ✓  Order placed successfully!
-```
-
----
-
 ## Log Files
 
 Logs are written to `logs/trading_bot.log` automatically on first run.
