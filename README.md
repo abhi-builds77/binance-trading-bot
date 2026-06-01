@@ -79,7 +79,7 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ### Market Order – SELL
 
 ```bash
-python cli.py --symbol ETHUSDT --side SELL --type MARKET --quantity 0.01
+python cli.py --symbol BTCUSDT --side SELL --type MARKET --quantity 0.001
 ```
 
 ### Limit Order – SELL
@@ -91,7 +91,7 @@ python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price
 ### Limit Order – BUY
 
 ```bash
-python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.001 --price 40000
+python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.002 --price 40000
 ```
 
 ### Stop-Limit Order (Bonus) – BUY
